@@ -445,21 +445,17 @@ nmap <leader>br <Action>(CloseAllToTheRight)
 " ========================================
 " Explorer/Tree Keymaps
 " ========================================
+let g:WhichKeyDesc_buffer_explorer = "<leader>be Recent Files"
+nmap <leader>be <Action>(RecentFiles)
 
-let g:WhichKeyDesc_buffer_explorer = "<leader>be Buffer Explorer"
-nmap <leader>be <Action>(ActivateProjectToolWindow)
+let g:WhichKeyDesc_explorer = "<leader>e Explorer Select in Project"
+nmap <leader>e <Action>(SelectInProjectView)
 
-let g:WhichKeyDesc_explorer = "<leader>e Explorer NeoTree (Root Dir)"
-nmap <leader>e <Action>(FileStructurePopup)
+let g:WhichKeyDesc_explorer_cwd = "<leader>E Explorer Project Tool Window"
+nmap <leader>E <Action>(ActivateProjectToolWindow)
 
-let g:WhichKeyDesc_explorer_cwd = "<leader>E Explorer NeoTree (cwd)"
-nmap <leader>E <Action>(SelectInProjectView)
-
-let g:WhichKeyDesc_explorer_alt = "<leader>fe Explorer NeoTree (Root Dir)"
-nmap <leader>fe <Action>(ActivateProjectToolWindow)
-
-let g:WhichKeyDesc_explorer_cwd_alt = "<leader>fE Explorer NeoTree (cwd)"
-nmap <leader>fE <Action>(ActivateProjectToolWindow)
+let g:WhichKeyDesc_explorer_alt = "<leader>fe File Structure Popup"
+nmap <leader>fe <Action>(FileStructurePopup)
 
 let g:WhichKeyDesc_git_explorer = "<leader>ge Git Explorer"
 nmap <leader>ge <Action>(ActivateVersionControlToolWindow)
