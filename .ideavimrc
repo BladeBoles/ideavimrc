@@ -755,3 +755,7 @@ vnoremap < <gv
 
 " There are several more Neovim mappings that need to be ported.
 
+
+" Some of my own additions
+let g:WhichKeyDesc_related = "ga Go to Any Related File"
+nmap ga <Action>(GotoRelated)
